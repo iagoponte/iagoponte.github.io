@@ -1,0 +1,167 @@
+/* a raiz serve para que sejam declarados estilos para todo o documento html, sem dividi-lo por body, head...
+e tmabém é útil para DECLARAR VARIÁVEIS PARA O CSS, que servirão para as demais declarações de classe, etc.*/
+:root {
+    --corpref: #333 /* isso é uma variável */;
+    --corfundo: #4b5757;
+    --margempref: 50px;
+    
+}
+
+/* ******{
+    
+    aqui, no asterisco, nós colocamos coisas que irão valer para todos os elementos estilísticos do css
+}
+*/
+
+html, body {
+    
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+ /* aplicar nos elementos hmtl    "display: flex;"  */ 
+    text-align: left;
+    background-color: #131212;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#e3e3d1;
+    scroll-behavior: smooth;
+}
+
+.infom {
+    text-align:start;
+}
+
+hr {
+    color: #45632a;
+    opacity: 0.5;
+}
+
+/* Títulos */
+.titulop {
+    padding-top: 60px; /* Espaço fixo depois da barra de navegação */
+    text-align:center;
+    color:#b0b087;
+}
+
+.titulosec {
+    color:#bbdb9e;
+    text-align: center;
+}
+
+.tituloterc {
+    color:#e3e3d1
+}
+
+/*Barra de navegação*/
+/* #imagem-menu {
+    width: auto;
+    height: 60px;
+    object-fit: contain;
+    cursor: pointer;
+    margin-top: 0;
+   
+}
+*/
+
+
+/*Com o nav eu quero: fazer com que ele suma no topo da página, apareça translúcido quando tiver itens em baixo dele, que esteja centralizado ao meio da página, sem ser botão, link A com hover mesmo. Lupa de procura na página, no canto direito e minha foto abrindo de popup a partir do meu "perfil". No canto esquerdo ficaria somente uma logo "CV-IP*/
+nav.menuprincipal { /*corririr ref A*/
+    background-color: #020a04;
+    position: fixed;
+    height: 60px;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    float: left;
+ }
+
+
+.item-menu { /* posso mudar para botão dentro da tag A */
+   /*retirei daqui o display: block*/
+    /* Não sei para o que serve */
+    height: 100%;
+    color:#bbdb9e;
+    background-color: #4b5757;
+    font-size: 95%;
+    text-align: center;
+    padding: 10px 15px; /*padding do texto dentro do botão*/
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.item-menu:hover {
+    background-color: #60796a;
+    color: white;
+    box-shadow: inset;
+}
+
+/*Seções e estilo*/
+.secoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.secao1 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    background-color: #4b5757;
+    padding:0.5%;
+    margin-bottom: 10px;
+    border: 0.5px solid #4b5757;
+    border-radius: 15px;
+    box-sizing: border-box;
+    /*box-shadow: 0px 2px 4px#000000;*/
+
+}
+
+.secao2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    background-color: #4b5757;
+    padding:0.5%;
+    margin-bottom: 10px;
+    border: 0.5px solid #4b5757;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.secao3 {
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 70%;
+    background-color: #4b5757;
+    padding:0.5%;
+    margin-bottom: 10px;
+    border: 0.5px solid #4b5757;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.secao4 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    background-color: #4b5757;
+    padding:0.5%;
+    margin-bottom: 10px;
+    border: 0.5px solid #4b5757;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.secao5 {
+    text-align: center;
+}
+#voltarinicio {
+    text-align: left;
+}
